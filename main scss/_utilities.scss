@@ -1,0 +1,62 @@
+//Utility Classes
+
+.text-center {
+  text-align: center;
+}
+
+//Padding Top-Bottom Classes
+
+.py1 {
+  padding: 10px 0;
+}
+.py2 {
+  padding: 15px 0;
+}
+.py3 {
+  padding: 20px 0;
+}
+
+//Margin Top-Bottom Classes
+
+.my1 {
+  margin: 10px 0;
+}
+.my2 {
+  margin: 15px 0;
+}
+.my3 {
+  margin: 20px 0;
+}
+
+//Backgroumd-Color Classes
+
+.bg-main {
+  background: $main-color;
+}
+.bg-dark {
+  background: $dark-color;
+}
+.bg-light {
+  background: $light-color;
+}
+.bg-medium {
+  background: $primary-color;
+}
+
+//Paragraph Utility
+
+.lead {
+  font-size: 20px;
+  padding: 20px 0;
+}
+
+.bottom-line {
+  height: 2px;
+  background: $main-color;
+  width: 5%;
+  margin: auto;
+}
+
+.section-title {
+  font-size: 30px;
+}

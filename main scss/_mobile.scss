@@ -1,0 +1,103 @@
+@media (max-width: 800px) {
+  #header-home {
+    height: 500px;
+
+    .header-content {
+      padding-top: 10%;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  #header-home,
+  #header-inner {
+    height: 115px;
+    padding: 20px;
+    border-bottom: 3px solid $main-color;
+    background: url(../dist/img/showcase.jpg) no-repeat 20% 30% / cover;
+
+    .menu-items {
+      flex-direction: column;
+      margin: -20px;
+    }
+
+    .header-content {
+      display: none;
+    }
+  }
+
+  #section-a .full-process .process {
+    border-bottom: 1px solid #f4f4f4;
+    padding: 20px;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  #section-a .full-process,
+  #section-b .stats,
+  #section-c .creative-process,
+  #about #section-d .testimonials,
+  #work #section-a .projects {
+    grid-template-columns: 1fr;
+  }
+
+  #about {
+    #section-a .about-me {
+      grid-template-areas:
+        'bioimage'
+        'bio'
+        'aw1'
+        'aw2'
+        'aw3';
+    }
+    #section-c {
+      display: none;
+    }
+  }
+
+  #contact #section-a .contact-fields {
+    grid-template-areas:
+      'name'
+      'email'
+      'subject'
+      'number'
+      'message';
+  }
+
+  #contact #section-b .info {
+    flex-direction: column;
+    .items {
+      border-bottom: 1px solid #444;
+      padding: 20px;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+
+  #contact #section-c .lets-start {
+    font-size: 24px;
+  }
+
+  #main-footer {
+    .footer-items {
+      flex-direction: column;
+      .fab {
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+@media (max-height: 375px) {
+  #header-home {
+    .header-content {
+      padding-top: 6%;
+    }
+  }
+  #header-inner {
+    height: 22vh;
+  }
+}
